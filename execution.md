@@ -1,4 +1,4 @@
-# Execution — Data-Driven PFMEA + Linked Control Plan
+# Execution — Nexus-FMEA: Data-Driven PFMEA & Linked Control Plan
 
 *Minute-detail build plan: tools, the defect-rate → Occurrence derivation, PFMEA and Control Plan construction, the linkage check, validation, schedule, and pitfalls. Paired with `idea.md`.*
 
@@ -18,8 +18,8 @@ pip freeze > requirements.txt
 
 **Scaffolding:**
 ```
-data-driven-pfmea-control-plan/
-├── data/processed/defect_rates.csv     # from Project 1
+nexus-fmea/
+├── data/processed/defect_rates.csv     # from Project 1 (Sentinel-8D)
 ├── notebooks/01_occurrence_from_data.ipynb
 ├── templates/                          # blank AIAG-VDA PFMEA + Control Plan
 ├── reports/PFMEA.xlsx · Control_Plan.xlsx · linkage_matrix.md

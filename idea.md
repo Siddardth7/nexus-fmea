@@ -1,4 +1,4 @@
-# Idea — Data-Driven PFMEA + Linked Control Plan
+# Nexus-FMEA: Data-Driven PFMEA & Closed-Loop Control Plan Synchronization
 
 *Full problem framing, rationale, scope, risks, deliverables, and interview positioning. The "why/what"; `execution.md` is the "how".*
 

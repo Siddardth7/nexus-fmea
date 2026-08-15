@@ -1,15 +1,18 @@
-# Data-Driven PFMEA + Linked Control Plan
+# Nexus-FMEA: Data-Driven PFMEA & Closed-Loop Control Plan Synchronization
 
-> Building a Process FMEA whose **Occurrence** ratings come from real defect-rate data (not opinion), and a Control Plan that is provably linked 1-to-1 to it — closing the PFMEA↔Control-Plan gap that causes most audit findings.
+> Constructing an AIAG-VDA Process FMEA whose **Occurrence** ratings are derived from measured per-operation defect rates, provably synchronized 1-to-1 to a shop-floor Control Plan under AIAG-VDA and AS9145 standards.
 
 ![status](https://img.shields.io/badge/status-planning-yellow)
 ![python](https://img.shields.io/badge/python-3.11-blue)
 ![framework](https://img.shields.io/badge/AIAG--VDA-Action%20Priority-informational)
+![standards](https://img.shields.io/badge/standards-AS9145%20%7C%20IATF%2016949-purple)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
-**Skill area:** PFMEA · Control Plan · APQP risk linkage (AIAG-VDA / AS9145)
-**Domain:** Discrete machining (general)
-**Headline deliverable:** A synchronized PFMEA + Control Plan package with a data-backed Occurrence justification and a linkage matrix proving every risk flows to a control.
+**Codename:** `nexus-fmea`  
+**Formal Case Study Title:** Data-Driven Process FMEA and Closed-Loop Control Plan Synchronization under AIAG-VDA & AS9145  
+**Skill area:** PFMEA · Control Plan · APQP Risk Architecture · AIAG-VDA Action Priority · AS9145 Flow-Down  
+**Domain:** Advanced Manufacturing Quality Systems (Automotive, Aerospace, Medical Device)  
+**Headline deliverable:** A synchronized PFMEA + Control Plan package with a data-backed Occurrence justification and a machine-verified linkage matrix.
 
 ---
 
@@ -37,7 +40,7 @@ Reuses the multi-station machining data from Project 1 — **CiP-DMD** (preferre
 ## Repository structure
 
 ```
-data-driven-pfmea-control-plan/
+nexus-fmea/
 ├── README.md · roadmap.md · idea.md · execution.md · resources.md
 ├── data/           # reused defect-rate summary from Project 1
 ├── notebooks/      # Occurrence derivation
