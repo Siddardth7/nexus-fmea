@@ -1,10 +1,10 @@
-step_id,operation,characteristic,n_parts,n_fail,defect_rate,ci_low,ci_high,low_confidence
-OP10,Sawing,saw_weight,801,0,0.0,0.0,0.004773,False
-OP20,Milling,mill_surface_roughness,801,179,0.223471,0.195981,0.2536,False
-OP20,Milling,mill_parallelism,801,67,0.083645,0.066403,0.104863,False
-OP20,Milling,mill_groove_depth,801,11,0.013733,0.007685,0.024422,False
-OP20,Milling,mill_groove_diameter,801,19,0.02372,0.015237,0.03675,False
-OP30,CNC Lathe,lathe_coaxiality,459,59,0.12854,0.100977,0.16227,False
-OP30,CNC Lathe,lathe_diameter,459,9,0.019608,0.010349,0.036841,False
-OP30,CNC Lathe,lathe_length,459,1,0.002179,0.000385,0.012236,False
-OP40,Assembly,assembly_pressure,801,19,0.02372,0.015237,0.03675,False
+step_id,operation,characteristic,n_parts,n_fail,defect_rate,ci_low,ci_high,low_confidence,occurrence
+OP10,Sawing,saw_weight,801,0,0.0,0.0,0.004773,False,1
+OP20,Milling,mill_surface_roughness,801,179,0.223471,0.195981,0.2536,False,10
+OP20,Milling,mill_parallelism,801,67,0.083645,0.066403,0.104863,False,9
+OP20,Milling,mill_groove_depth,801,11,0.013733,0.007685,0.024422,False,7
+OP20,Milling,mill_groove_diameter,801,19,0.02372,0.015237,0.03675,False,8
+OP30,CNC Lathe,lathe_coaxiality,459,59,0.12854,0.100977,0.16227,False,10
+OP30,CNC Lathe,lathe_diameter,459,9,0.019608,0.010349,0.036841,False,7
+OP30,CNC Lathe,lathe_length,459,1,0.002179,0.000385,0.012236,False,6
+OP40,Assembly,assembly_pressure,801,19,0.02372,0.015237,0.03675,False,8

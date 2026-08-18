@@ -1,5 +1,5 @@
-step_id,operation,n_parts,n_fail,defect_rate,ci_low,ci_high,low_confidence
-OP10,Sawing,801,0,0.0,0.0,0.004773,False
-OP20,Milling,801,224,0.27965,0.249676,0.311728,False
-OP30,CNC Lathe,459,68,0.148148,0.118573,0.183564,False
-OP40,Assembly,801,19,0.02372,0.015237,0.03675,False
+step_id,operation,n_parts,n_fail,defect_rate,ci_low,ci_high,low_confidence,occurrence
+OP10,Sawing,801,0,0.0,0.0,0.004773,False,1
+OP20,Milling,801,224,0.27965,0.249676,0.311728,False,10
+OP30,CNC Lathe,459,68,0.148148,0.118573,0.183564,False,10
+OP40,Assembly,801,19,0.02372,0.015237,0.03675,False,8
