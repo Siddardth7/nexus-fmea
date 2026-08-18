@@ -63,6 +63,11 @@ In traditional manufacturing, Process FMEAs frequently suffer from two critical 
 nexus-fmea/
 ├── README.md                           # Case study overview, results & résumé impact
 ├── requirements.txt                    # Reproducible environment dependencies
+├── foundation/                         # ground-up planning docs written before any code
+│   ├── idea.md                         # problem framing, scope, risk register, acceptance criteria
+│   ├── execution.md                    # detailed build plan & Occurrence-mapping methodology
+│   ├── roadmap.md                      # milestone plan (as originally scoped)
+│   └── resources.md                    # datasets, standards, and references
 ├── data/
 │   ├── raw/parts_p1.csv                # Raw empirical 802-part dataset from Sentinel-8D
 │   └── processed/
@@ -113,6 +118,42 @@ nexus-fmea/
 
 ---
 
+## Roadmap & Future Work
+
+The core APQP artifact is **complete**: a data-driven PFMEA, a synchronized Control
+Plan, and a machine-verified linkage matrix with zero orphaned high-priority risks.
+The directions below extend the case study from a static, single-revision risk
+package toward a living, closed-loop quality system on the same dataset.
+
+- **Live Occurrence re-rating.** Re-derive Occurrence bands on a rolling window of
+  shop-floor defect telemetry so the PFMEA updates itself as process capability
+  drifts, instead of freezing at a single audit snapshot.
+- **Detection grounded in measured gauge capability.** Replace assigned Detection
+  ratings with values driven by Gauge R&R / MSA studies per characteristic, closing
+  the last subjective input in the S·O·D triad.
+- **RPN-void back-test.** Quantify how many failure modes the AIAG-VDA Action
+  Priority hierarchy re-ranks versus legacy RPN on this dataset, as a portable
+  argument for the 2019 methodology change.
+- **Control Plan effectiveness loop.** Feed post-control defect rates back into the
+  matrix to prove each shop-floor control actually moved its characteristic's
+  Occurrence — turning the linkage proof from *coverage* into *effectiveness*.
+- **CI-gated linkage check.** Wire `scripts/check_linkage.py` into a GitHub Action so
+  any edit to the PFMEA or Control Plan that breaks 1-to-1 traceability fails the
+  build automatically.
+
+---
+
 ## Author
 
 **Siddardth Pathipaka** — Quality & Process Engineer · M.S. Aerospace (UIUC) · Six Sigma Green Belt · [@Siddardth7](https://github.com/Siddardth7)
+
+---
+
+## Declaration of AI Usage
+
+AI (Claude Code) was used strictly as a **coding-assistance tool** — writing and
+debugging the analysis notebook, its figures, and the linkage-verification
+script. Every **engineering and domain decision** is my own: the defect-rate →
+Occurrence band mapping, the AIAG-VDA Action Priority ratings, the Special
+Characteristic flow-down, the Control Plan methods, and the audit conclusions. The
+analysis, judgment, and accountability for this case study are entirely mine.

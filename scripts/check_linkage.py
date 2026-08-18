@@ -11,10 +11,14 @@ import openpyxl
 import pandas as pd
 from datetime import datetime
 
+# Resolve paths relative to the repo root (this script's parent dir),
+# so the check runs identically from any working directory.
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 def run_linkage_check():
-    pfmea_path = "reports/PFMEA.xlsx"
-    cp_path = "reports/Control_Plan.xlsx"
-    output_md_path = "reports/linkage_matrix.md"
+    pfmea_path = os.path.join(REPO_ROOT, "reports", "PFMEA.xlsx")
+    cp_path = os.path.join(REPO_ROOT, "reports", "Control_Plan.xlsx")
+    output_md_path = os.path.join(REPO_ROOT, "reports", "linkage_matrix.md")
 
     if not os.path.exists(pfmea_path) or not os.path.exists(cp_path):
         print(f"Error: Missing input files. Ensure {pfmea_path} and {cp_path} exist.")
